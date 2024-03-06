@@ -1,0 +1,230 @@
+/* --------------------------------- Header: Border & Logo ----------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border box;
+  background-color: #573fcd;
+  color: white;
+}
+
+.container {
+  padding: 5px 5%;
+}
+
+/* -------------------------------Header: Navigator-------------------------------- */
+/*按鈕間隔、去掉逗點、排版（變成橫向）*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+ul {
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: light;
+}
+
+li {
+  margin: 30px;
+}
+
+/* text-decoration 底線拿掉：變成白色 */
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgb(238, 187, 176);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transform: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ----------------------------------About Me---------------------------------- */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+}
+
+.img {
+  max-width: 200px;
+  float: left;
+  margin-right: 50px;
+  margin-top: -50px;
+}
+
+.text h1 {
+  margin-top: 2px;
+  font-size: 50px;
+  text-align: left;
+  text-indent: 20px;
+}
+
+.text h1 span {
+  color: rgb(238, 187, 176);
+}
+
+.text p {
+  margin-top: 4%;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: justify;
+  letter-spacing: 0.15rem;
+  position: relative;
+  left: 20px;
+}
+
+hr {
+  width: 80%;
+  margin-top: -10px;
+}
+/* ------------Skills--------- */
+
+.skills {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  min-height: 10vh;
+  width: 85%;
+  margin: 2rem auto 0 auto;
+}
+
+.img01 {
+  max-width: 160px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.text01 h1 {
+  margin-top: 2px;
+  font-size: 42px;
+  text-align: left;
+  text-indent: 80px;
+}
+
+.text01 h1 span {
+  color: rgb(238, 187, 176);
+}
+
+.text01 ul li {
+  margin-top: 4%;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  margin-left: 50px;
+}
+
+/* ------------Emotion--------- */
+
+.emotion {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  min-height: 10vh;
+  width: 85%;
+  margin: 2rem auto 0 auto;
+}
+
+.img02 {
+  max-width: 160px;
+  float: right;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+.text02 h1 {
+  margin-top: 2px;
+  font-size: 40px;
+  text-align: left;
+  text-indent: 80px;
+}
+
+.text02 h1 span {
+  color: rgb(238, 187, 176);
+}
+
+.text02 ul li {
+  margin-top: 4%;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  margin-left: 50px;
+}
+
+/* ------------Principle--------- */
+
+.principle {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  min-height: 10vh;
+  width: 85%;
+  margin: 2rem auto 0 auto;
+}
+
+.img03 {
+  max-width: 160px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+.text03 h1 {
+  margin-top: 2px;
+  font-size: 40px;
+  text-align: left;
+  text-indent: 90px;
+}
+
+.text03 h1 span {
+  color: rgb(238, 187, 176);
+}
+
+.text03 ul li {
+  margin-top: 4%;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  margin-left: 50px;
+}
+
+/* -----Footer ----- */
+
+.footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: rgb(219, 217, 239);
+}

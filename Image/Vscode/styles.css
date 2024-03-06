@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #573fcd;
+  color: #fff;
+}
+
+/* #header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../Images/01.png");
+  background-repeat: no-repeat;
+  background-size: 600px 450px;
+  background-position-x: right;
+  background-position-y: 100%;
+} */
+
+#header {
+  margin: 1rem;
+}
+
+/*邊設計*/
+
+.container {
+  padding: 5px 5%;
+}
+
+.header-text p {
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+.header-text img {
+  float: right;
+  margin-top: -50px;
+}
+/* -------------------------------------Navigators-------------------------------------- */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*按鈕間隔、去掉逗點、排版*/
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/* 按鈕：字體、大小 */
+
+ul {
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}
+
+li {
+  margin: 30px;
+}
+
+/*按鈕設計*/
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+/* 底線製作：我不懂position: relative/ absolute以及 left: 0 和 bottom -6px用法 
+   width: 100% >> 0 >> hidden
+*/
+
+/* 滑鼠移到：就會出現底線(width 暫時消失其實一直存在，等到滑鼠來才會亮起來)*/
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgb(238, 187, 176);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transform: 0.5s;
+}
+
+/* 滑鼠過來：底線出現、離開又消失 */
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* --------------------------------------Title---------------------------------- */
+/*整體比例：p and h1*/
+.header-text {
+  margin-top: 10%;
+  font-size: 22px;
+}
+
+.header-text h1 {
+  font-size: 62px;
+}
+
+.header-text h1 span {
+  color: rgb(238, 187, 176);
+}
+
+/* ---------------------------------------Button 1-------------------------- */
+.button1 {
+  padding: 16px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  color: rebeccapurple;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  bottom: -15px;
+  margin-right: 10px;
+}
+.button1:hover {
+  background-color: rebeccapurple;
+  color: floralwhite;
+}
+
+/* ---------------------------------------Button 2-------------------------- */
+
+.button2 {
+  padding: 18px 28px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rebeccapurple;
+  opacity: 0.8;
+  color: floralwhite;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  bottom: -15px;
+  margin-right: 10px;
+}
+.button2:hover {
+  background-color: rgb(238, 187, 176);
+  color: rebeccapurple;
+}
